@@ -17,7 +17,6 @@ jobs:
           echo "## Model metrics" > report.md
           cat metrics.txt >> report.md
 
-          echo "## Data viz" >> report.md
-          cml-publish plotal.png --md >> reporn.md
+          echo '![](./plot.png "Confusion Matrix")' >> report.md
 
           cml-send-comment report.md
