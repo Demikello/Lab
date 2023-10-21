@@ -32,3 +32,4 @@ print(confusion)
 
 disp = ConfusionMatrixDisplay(confusion_matrix=confusion, display_labels=clf.classes_)
 plt.savefig("plot.png")
+plt.show()
