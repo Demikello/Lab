@@ -18,6 +18,6 @@ jobs:
           cat metrics.txt >> report.md
 
           echo "## Data viz" >> report.md
-          cml-publish plot.png --md >> reporn.md
+          cml-publish plotal.png --md >> reporn.md
 
           cml-send-comment report.md
