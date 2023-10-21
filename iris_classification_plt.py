@@ -21,12 +21,10 @@ accuracy = accuracy_score(y_test, predictions)
 confusion = confusion_matrix(y_test, predictions)
 
 with open("metrics.txt", "w") as outfile:
-    outfile.write("Accuracy: " + str(accuracy) + "
-")
+    outfile.write("Accuracy: " + str(accuracy) + "\n")
 
 with open("metrics_2.txt", "w") as outfile:
-    outfile.write("Confusion matrix: " + str(confusion) + "
-")
+    outfile.write("Confusion matrix: " + str(confusion) + "\n")
 
 print("Accuracy:", accuracy)
 print("Confusion matrix:")
